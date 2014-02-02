@@ -7,6 +7,9 @@
 
 
 ## Running the example test
+Selenium will need to run in a background process, or in a different terminal session.  I don't bother
+with backgrounding the task becuase I want to see the output it generates.  I just run it in a different
+tab in my Terminal.
 
     $ ./start-selenium.sh
     $ npm test
