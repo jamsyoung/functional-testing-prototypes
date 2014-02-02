@@ -15,8 +15,7 @@ Chai                 | <https://github.com/chaijs/chai>           | <http://chai
 Arrow                | <https://github.com/yahoo/arrow>           |
 Nightwatch.js        | <https://github.com/beatfactor/nightwatch> | <http://nightwatchjs.org/>
 Nodeunit             | <https://github.com/caolan/nodeunit>       |
-WebdriverJS (Node)   | <https://github.com/Camme/webdriverjs>     | <https://code.google.com/p/selenium/wiki/WebDriverJs>
-WebdriverJS (Native) |  |
+WebdriverJS (Node)   | <https://github.com/Camme/webdriverjs>     |
 
 
 ## Combinations
