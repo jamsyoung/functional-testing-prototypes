@@ -31,6 +31,10 @@ None of the technologies above are really standalone.  All of these things work 
 
 
 ## References
-*Automated Functional Testing with JavaScript Using Mocha and Selenium*  
-http://unexpectedliteral.com/2012/04/17/automated-functional-testing-with-javascript-using-mocha-and-selenium-part-1/
-http://unexpectedliteral.com/2012/05/09/automated-functional-testing-with-javascript-using-mocha-and-selenium-part-2/
+
+Automated Functional Testing with JavaScript Using Mocha and Selenium - [Part 1][ref-1-part-1] - [Part 2][ref-1-part-2]
+
+
+
+[ref-1-part-1]: http://unexpectedliteral.com/2012/04/17/automated-functional-testing-with-javascript-using-mocha-and-selenium-part-1/
+[ref-1-part-2]: http://unexpectedliteral.com/2012/05/09/automated-functional-testing-with-javascript-using-mocha-and-selenium-part-2/
