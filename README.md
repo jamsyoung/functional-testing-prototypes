@@ -5,16 +5,18 @@ research I have done to determine which is best for my projects.
 
 ## Technologies
 
-Selenium             | <https://code.google.com/p/selenium/>                 | <http://docs.seleniumhq.org/>  
-PhantomJS            | <https://github.com/ariya/phantomjs/>                 | <http://phantomjs.org/>  
-CasperJS             | <https://github.com/n1k0/casperjs>                    | <http://casperjs.org/>  
-Mocha                | <https://github.com/visionmedia/mocha>                | <http://visionmedia.github.io/mocha/>  
-Chai                 | <https://github.com/chaijs/chai>                      | <http://chaijs.com/>  
-Arrow                | <https://github.com/yahoo/arrow>                      |  
-Nightwatch.js        | <https://github.com/beatfactor/nightwatch>            | <http://nightwatchjs.org/>  
-Nodeunit             | <https://github.com/caolan/nodeunit>                  |  
-WebdriverJS (Node)   | <https://github.com/Camme/webdriverjs>                |  
-WebdriverJS (Native) | <https://code.google.com/p/selenium/wiki/WebDriverJs> |  
+Project              | Code Repository                                       | Homepage 
+-------------------- | ----------------------------------------------------- | -------------------------------------  
+Selenium             | <https://code.google.com/p/selenium/>                 | <http://docs.seleniumhq.org/>
+PhantomJS            | <https://github.com/ariya/phantomjs/>                 | <http://phantomjs.org/>
+CasperJS             | <https://github.com/n1k0/casperjs>                    | <http://casperjs.org/>
+Mocha                | <https://github.com/visionmedia/mocha>                | <http://visionmedia.github.io/mocha/>
+Chai                 | <https://github.com/chaijs/chai>                      | <http://chaijs.com/>
+Arrow                | <https://github.com/yahoo/arrow>                      |
+Nightwatch.js        | <https://github.com/beatfactor/nightwatch>            | <http://nightwatchjs.org/>
+Nodeunit             | <https://github.com/caolan/nodeunit>                  |
+WebdriverJS (Node)   | <https://github.com/Camme/webdriverjs>                |
+WebdriverJS (Native) | <https://code.google.com/p/selenium/wiki/WebDriverJs> |
 
 
 ## Combinations
