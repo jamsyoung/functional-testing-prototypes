@@ -5,27 +5,26 @@ var expect = require('chai').expect,
     webdriverjs = require('webdriverjs'),
     client = webdriverjs.remote();
 
-describe('Run Selenium tests', function () {
+describe('cnn.com', function () {
 
-    before(function (done) {
+    before(function () {
         client.addCommand('hasText', function (selector, text, callback) {
             this.getText(selector, function (result) {
+                expect(result).to.be.a('object');
+                expect(result.value).to.be.a('string');
                 expect(result.value).to.have.string(text);
                 callback();
             });
         });
-        done();
     });
 
     beforeEach(function (done) {
         client.init();
-        client.url('http://cnn.com', done);
+        client.url('http://www.cnn.com/', done);
     });
 
-    it('should be able to view the home page', function (done) {
-        this.timeout(1000 * 10);
-        client.hasText('#nav-home', 'Home');
-        done();
+    it('should have a navigation item named "Home"', function (done) {
+        client.hasText('#nav-home', 'Homez', done);
     });
 
     afterEach(function (done) {

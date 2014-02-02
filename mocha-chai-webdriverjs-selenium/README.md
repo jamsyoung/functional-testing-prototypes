@@ -1,5 +1,9 @@
 # Mocha / Chai / WebdriverJS / Selenium
 
+## Status
+This is derived from the example posted [here][example].  This is not currently working for me.
+
+
 ## Setup
 
     $ ./get-selenium.sh
@@ -21,10 +25,15 @@ The above is made of scripts for ease.  Here is what you really need to do witho
     $ curl -O http://selenium.googlecode.com/files/selenium-server-standalone-2.39.0.jar
     $ npm install
     $ java -Dwebdriver.firefox.profile=default -jar selenium-server-standalone-2.39.0.jar
-    $ ./node_modules/.bin/mocha test/cnn.test.js -t 30000
+    $ ./node_modules/.bin/mocha test/cnn.test.js -t 6000 -R list
 
 
 ## A Note about Selenium Versions
 If you keep Firefix up to date, you also need to keep Selenium up to date.  They do not need to
 be hand in hand, but if they get too far apart, things can break.  You can find the most current
 version of Selenium here: <https://code.google.com/p/selenium/downloads/list>
+
+
+
+
+[example]: http://unexpectedliteral.com/2012/05/09/automated-functional-testing-with-javascript-using-mocha-and-selenium-part-2/
