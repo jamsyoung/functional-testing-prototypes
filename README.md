@@ -2,6 +2,9 @@
 Seems there are a variety of ways to do automated functional testing.  This is the result of some
 research I have done to determine which is best for my projects.
 
+My goal is to do a small set of tests using each combination of projects and see what is good and
+bad about each.
+
 
 ## Technologies
 
