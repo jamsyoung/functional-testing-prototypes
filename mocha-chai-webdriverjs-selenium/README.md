@@ -29,3 +29,8 @@ the selenium-standalone is up to date at <https://github.com/vvo/selenium-standa
 - Mocha Docs - <http://visionmedia.github.io/mocha/>
 - Chai Docs - <http://chaijs.com/>
 - WebdriverJS Docs - <https://github.com/camme/webdriverjs>
+
+
+## Output
+
+![](http://new.tinygrab.com/d34460e8161c5ffd603d17f09c6bbe139dadfc2372.png)
