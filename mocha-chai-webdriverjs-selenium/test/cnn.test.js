@@ -3,10 +3,30 @@
 
 var chai = require('chai'),
     webdriverjs = require('webdriverjs'),
-    options = { desiredCapabilities: { browserName: 'chrome' } },
+    useSauceLabs = false, // I am manutally toggling this for now
+    options = {
+        desiredCapabilities: {
+            browserName: 'chrome',
+            name: 'Mocha/Chai/Selenium CNN.com POC on SauceLabs'
+        },
+        host: useSauceLabs ? 'ondemand.saucelabs.com' : 'localhost',
+        port: useSauceLabs ? 80 : 4444,
+        user: useSauceLabs ? 'saucelabs-username' : '',
+        key: useSauceLabs ? 'saucelabs-key' : '',
+        logLevel: 'silent'  // verbose | silent | command | data | result
+    },
     client = webdriverjs.remote(options);
 
 global.should = chai.should();
+
+console.log(' browser: %s', options.desiredCapabilities.browserName);
+console.log('    host: %s', options.host);
+console.log('    port: %d', options.port);
+// console.log('    user: %s', options.user);
+// console.log('     key: %s', options.key);
+console.log('logLevel: %s', options.logLevel);
+console.log('    name: %s', options.desiredCapabilities.name);
+
 
 describe('cnn.com', function () {
 

@@ -21,6 +21,7 @@ Arrow                | <https://github.com/yahoo/arrow>           |
 Nightwatch.js        | <https://github.com/beatfactor/nightwatch> | <http://nightwatchjs.org/>
 Nodeunit             | <https://github.com/caolan/nodeunit>       |
 WebdriverJS (Node)   | <https://github.com/Camme/webdriverjs>     |
+Node-SauceLabs       | <https://github.com/holidayextras/node-saucelabs> |
 
 
 ## Combinations
@@ -36,7 +37,12 @@ None of the technologies above are really standalone.  All of these things work 
 
 ## References
 
-Automated Functional Testing with JavaScript Using Mocha and Selenium - [Part 1][ref-1-part-1] - [Part 2][ref-1-part-2]
+- Automated Functional Testing with JavaScript Using Mocha and Selenium - [Part 1][ref-1-part-1] - [Part 2][ref-1-part-2]
+
+- A more up-to-date version of the example in the previous article - <https://github.com/leutloff/selenium-example>
+
+- Loads of good examples in the WebdriverJS repository - <https://github.com/camme/webdriverjs>
+
 
 
 
