@@ -1,12 +1,8 @@
 # Mocha / Chai / WebdriverJS / Selenium
 
-## Status
-This is derived from the example posted [here][example].  This is not currently working for me.
-
 
 ## Setup
 
-    $ ./get-selenium.sh
     $ npm install
 
 
@@ -15,25 +11,21 @@ Selenium will need to run in a background process, or in a different terminal se
 with backgrounding the task becuase I want to see the output it generates.  I just run it in a different
 tab in my Terminal.
 
-    $ ./start-selenium.sh
+    $ ./node_modules/.bin/start-selenium
     $ npm test
 
-
-## Behind the scenes
-The above is made of scripts for ease.  Here is what you really need to do without those.
-
-    $ curl -O http://selenium.googlecode.com/files/selenium-server-standalone-2.39.0.jar
-    $ npm install
-    $ java -Dwebdriver.firefox.profile=default -jar selenium-server-standalone-2.39.0.jar
-    $ ./node_modules/.bin/mocha test/cnn.test.js -t 6000 -R list
+NOTE: `npm test` is short for `./node_modules/.bin/mocha test/cnn.test.js -t 6000 -R spec`
 
 
 ## A Note about Selenium Versions
-If you keep Firefix up to date, you also need to keep Selenium up to date.  They do not need to
+You will want to keep Selenium up to date as you keep browsers up to date.  They do not need to
 be hand in hand, but if they get too far apart, things can break.  You can find the most current
-version of Selenium here: <https://code.google.com/p/selenium/downloads/list>
+version of Selenium at <https://code.google.com/p/selenium/downloads/list> and you can make sure
+the selenium-standalone is up to date at <https://github.com/vvo/selenium-standalone>
 
 
+## Documentation
 
-
-[example]: http://unexpectedliteral.com/2012/05/09/automated-functional-testing-with-javascript-using-mocha-and-selenium-part-2/
+- Mocha Docs - <http://visionmedia.github.io/mocha/>
+- Chai Docs - <http://chaijs.com/>
+- WebdriverJS Docs - <https://github.com/camme/webdriverjs>
