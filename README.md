@@ -37,4 +37,4 @@ Automated Functional Testing with JavaScript Using Mocha and Selenium - [Part 1]
 
 [ref-1-part-1]: http://unexpectedliteral.com/2012/04/17/automated-functional-testing-with-javascript-using-mocha-and-selenium-part-1/
 [ref-1-part-2]: http://unexpectedliteral.com/2012/05/09/automated-functional-testing-with-javascript-using-mocha-and-selenium-part-2/
-[mcws]: https://github.com/jamsyoung/functional-testing-prototypes/blob/master/README.md
+[mcws]: https://github.com/jamsyoung/functional-testing-prototypes/blob/master/mocha-chai-webdriverjs-selenium/README.md
