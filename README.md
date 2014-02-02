@@ -3,7 +3,9 @@ Seems there are a variety of ways to do automated functional testing.  This is t
 research I have done to determine which is best for my projects.
 
 My goal is to do a small set of tests using each combination of projects and see what is good and
-bad about each.
+bad about each.  So far the tests consist of:
+
+- Navigating to <http://cnn.com> and validating that the "Home" navigation item is on the page.
 
 
 ## Technologies
