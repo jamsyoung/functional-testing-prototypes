@@ -1,0 +1,15 @@
+{
+    "name": "yummy-pasta",
+    "version": "0.0.1",
+    "description": "If you love pasta, you need Sauce too",
+    "scripts": {
+        "test": "grunt test"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "grunt": "~0.4.0",
+        "grunt-contrib-connect": "~0.1.2",
+        "grunt-contrib-watch": "~0.2.0",
+        "grunt-saucelabs": "~4.0.2"
+    }
+}
