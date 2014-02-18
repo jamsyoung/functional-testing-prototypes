@@ -2,13 +2,13 @@
 'use strict';
 
 var debug = require('debug')('mocha-test'),
-    SauceLabs = require('saucelabs'),
-    sauce = new SauceLabs({
-        username: process.env.SAUCE_USER || '',
-        password: process.env.SAUCE_KEY || ''
-    }),
+    // SauceLabs = require('saucelabs'),
+    // sauce = new SauceLabs({
+    //     username: process.env.SAUCE_USER || '',
+    //     password: process.env.SAUCE_KEY || ''
+    // }),
     useSauceLabs = (process.env.USE_SAUCE_LABS === 'TRUE') ? true : false, // environment variable is a string
-    chai = require('chai'),
+    expect = require('chai').expect,
     webdriverjs = require('webdriverjs'),
     options = {
         desiredCapabilities: {
@@ -25,16 +25,8 @@ var debug = require('debug')('mocha-test'),
     },
     client = webdriverjs.remote(options);
 
-global.should = chai.should();
-
-debug('process.env.USE_SAUCE_LABS: %s', process.env.USE_SAUCE_LABS);
-debug(' browser: %s', options.desiredCapabilities.browserName);
-debug(' version: %s', options.desiredCapabilities.version);
-debug('    host: %s', options.host);
-debug('    port: %d', options.port);
-debug('    user: %s', options.user);
-debug('logLevel: %s', options.logLevel);
-debug('    name: %s', options.desiredCapabilities.name);
+debug('useSauceLabs: %j', useSauceLabs);
+debug('options: %j', options);
 
 
 /* this is used to send a result to sauce labs so they can record it
@@ -76,7 +68,7 @@ describe('cnn.com', function () {
     describe('page', function () {
         it('should have a title that contains "CNN.com"', function (done) {
             client.getTitle(function (error, result) {
-                result.should.contain('CNN.com');
+                expect(result).to.contain('CNN.com');
                 done();
             });
         });
@@ -85,21 +77,21 @@ describe('cnn.com', function () {
     describe('page navigation', function () {
         it('should have an item for "Home"', function (done) {
             client.getText('#nav-home', function (error, result) {
-                result.should.equal('Home');
+                expect(result).to.equal('Home');
                 done();
             });
         });
 
         it('should have an item for "TV & Video"', function (done) {
             client.getText('#nav-video', function (error, result) {
-                result.should.equal('TV & Video');
+                expect(result).to.equal('TV & Video');
                 done();
             });
         });
 
         it('should have an item for "CNN Trends"', function (done) {
             client.getText('#nav-trends', function (error, result) {
-                result.should.equal('CNN Trends');
+                expect(result).to.equal('CNN Trends');
                 done();
             });
         });
