@@ -6,7 +6,7 @@ var SauceLabs = require('saucelabs'),
         username: process.env.SAUCE_USER || '',
         password: process.env.SAUCE_KEY || ''
     }),
-    useSauceLabs = true, // I am manually toggling this for now
+    useSauceLabs = (process.env.USE_SAUCE_LABS === 'TRUE') ? true : false, // environment variable is a string
     chai = require('chai'),
     webdriverjs = require('webdriverjs'),
     options = {
