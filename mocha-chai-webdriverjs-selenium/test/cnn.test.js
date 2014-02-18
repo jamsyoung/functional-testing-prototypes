@@ -13,9 +13,9 @@ var debug = require('debug')('mocha-test'),
     options = {
         desiredCapabilities: {
             browserName: 'chrome',
-            version: 31,
-            platform: 'Windows 8.1',
-            name: 'Mocha/Chai/Selenium CNN.com POC on SauceLabs'
+            version: useSauceLabs ? 31 : '*',
+            platform: useSauceLabs ? 'Windows 8.1' : null,
+            name: 'CNN.com PoC Selenium Testing'
         },
         host: useSauceLabs ? 'ondemand.saucelabs.com' : 'localhost',
         port: useSauceLabs ? 80 : 4444,
@@ -27,6 +27,7 @@ var debug = require('debug')('mocha-test'),
 
 global.should = chai.should();
 
+debug('process.env.USE_SAUCE_LABS: %s', process.env.USE_SAUCE_LABS);
 debug(' browser: %s', options.desiredCapabilities.browserName);
 debug(' version: %s', options.desiredCapabilities.version);
 debug('    host: %s', options.host);
