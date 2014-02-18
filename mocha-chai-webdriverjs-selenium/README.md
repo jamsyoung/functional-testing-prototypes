@@ -12,17 +12,17 @@ your SauceLabs username and API key, set `USE_SAUCE_LABS` to `TRUE` then run `np
 
     $ npm test
 
-NOTE: `npm test` is short for `source set-env.conf; ./node_modules/.bin/mocha test/cnn.test.js -t 6000 -R spec`
-
 
 ## Running the example test on localhost
 Selenium will need to run in a background process, or in a different terminal session.  I don't bother
 with backgrounding the task becuase I want to see the output it generates.  I just run it in a different
 tab in my Terminal.  Make sure `set-env.conf` has `USE_SAUCE_LABS` set to `FALSE` then run `npm test`.
 
+
 **In Terminal Window 1**
 
-    $ ./node_modules/.bin/start-selenium
+    $ npm run start-selenium
+
 
 **In Terminal Window 2**
 
