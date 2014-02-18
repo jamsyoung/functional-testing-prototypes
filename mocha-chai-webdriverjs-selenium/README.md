@@ -12,7 +12,7 @@ your SauceLabs username and API key, set `USE_SAUCE_LABS` to `TRUE` then run `np
 
     $ npm test
 
-NOTE: `npm test` is short for `source set-env-conf; ./node_modules/.bin/mocha test/cnn.test.js -t 6000 -R spec`
+NOTE: `npm test` is short for `source set-env.conf; ./node_modules/.bin/mocha test/cnn.test.js -t 6000 -R spec`
 
 
 ## Running the example test on localhost
