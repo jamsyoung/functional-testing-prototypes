@@ -1,7 +1,8 @@
 /* global describe, it, before, after */
 'use strict';
 
-var SauceLabs = require('saucelabs'),
+var debug = require('debug')('mocha-test'),
+    SauceLabs = require('saucelabs'),
     sauce = new SauceLabs({
         username: process.env.SAUCE_USER || '',
         password: process.env.SAUCE_KEY || ''
@@ -26,13 +27,13 @@ var SauceLabs = require('saucelabs'),
 
 global.should = chai.should();
 
-console.log(' browser: %s', options.desiredCapabilities.browserName);
-console.log(' version: %s', options.desiredCapabilities.version);
-console.log('    host: %s', options.host);
-console.log('    port: %d', options.port);
-console.log('    user: %s', options.user);
-console.log('logLevel: %s', options.logLevel);
-console.log('    name: %s', options.desiredCapabilities.name);
+debug(' browser: %s', options.desiredCapabilities.browserName);
+debug(' version: %s', options.desiredCapabilities.version);
+debug('    host: %s', options.host);
+debug('    port: %d', options.port);
+debug('    user: %s', options.user);
+debug('logLevel: %s', options.logLevel);
+debug('    name: %s', options.desiredCapabilities.name);
 
 
 /* this is used to send a result to sauce labs so they can record it
@@ -41,14 +42,14 @@ console.log('    name: %s', options.desiredCapabilities.name);
  */
 /*
  *function recordResult(result, done) {
- *    console.log('recordResult called');
+ *    debug('recordResult called');
  *
  *    function updateJob(error, response) {
  *        if (response.status === 'in progress') {
- *            console.log('result is %j', result);
- *            console.log('id: %s', response.id);
+ *            debug('result is %j', result);
+ *            debug('id: %s', response.id);
  *            sauce.updateJob(response.id, { passed: result }, function () {
- *                console.log('job updated');
+ *                debug('job updated');
  *                done();
  *            });
  *        }

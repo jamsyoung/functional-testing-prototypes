@@ -5,10 +5,11 @@
     "private": true,
     "scripts": {
         "start-selenium": "./node_modules/.bin/start-selenium",
-        "test": "./node_modules/.bin/mocha test/cnn.test.js -t 60000 -R spec"
+        "test": ". set-env.conf; ./node_modules/.bin/mocha test/cnn.test.js -t 60000 -R spec"
     },
    "dependencies": {
         "chai": "1.9.0",
+        "debug": "0.7.4",
         "mocha": "1.17.1",
         "saucelabs": "0.1.1",
         "selenium-standalone": "2.39.0-2.8.0-2",
