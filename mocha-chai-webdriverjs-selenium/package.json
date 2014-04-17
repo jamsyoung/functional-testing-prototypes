@@ -5,7 +5,7 @@
     "private": true,
     "scripts": {
         "start-selenium": "./node_modules/.bin/start-selenium",
-        "test": ". set-env.conf; ./node_modules/.bin/mocha test/cnn.test.js -t 60000 -R spec"
+        "test": ". set-env.conf; ./node_modules/.bin/mocha test/mocha/cnn.test.js --timeout 60000 --reporter spec --require test/mocha-setup.js"
     },
    "dependencies": {
         "chai": "1.9.0",

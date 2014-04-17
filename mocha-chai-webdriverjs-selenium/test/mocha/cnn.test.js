@@ -1,34 +1,6 @@
 /* global describe, it, before, after */
 'use strict';
 
-var debug = require('debug')('mocha-test'),
-    // SauceLabs = require('saucelabs'),
-    // sauce = new SauceLabs({
-    //     username: process.env.SAUCE_USER || '',
-    //     password: process.env.SAUCE_KEY || ''
-    // }),
-    useSauceLabs = (process.env.USE_SAUCE_LABS === 'TRUE') ? true : false, // environment variable is a string
-    expect = require('chai').expect,
-    webdriverjs = require('webdriverjs'),
-    options = {
-        desiredCapabilities: {
-            browserName: 'chrome',
-            version: useSauceLabs ? 31 : '*',
-            platform: useSauceLabs ? 'Windows 8.1' : null,
-            name: 'CNN.com PoC Selenium Testing'
-        },
-        host: useSauceLabs ? 'ondemand.saucelabs.com' : 'localhost',
-        port: useSauceLabs ? 80 : 4444,
-        user: useSauceLabs ? process.env.SAUCE_USER : '',
-        key: useSauceLabs ? process.env.SAUCE_KEY : '',
-        logLevel: 'silent'  // verbose | silent | command | data | result
-    },
-    client = webdriverjs.remote(options);
-
-debug('useSauceLabs: %j', useSauceLabs);
-debug('options: %j', options);
-
-
 /* this is used to send a result to sauce labs so they can record it
  * the problem is that there are multiple tests in this file but sauce
  * only sees it as one job, with one global pass or fail
@@ -62,7 +34,7 @@ debug('options: %j', options);
 describe('cnn.com', function () {
 
     before(function (done) {
-        client.init().url('http:/www.cnn.com/', done);
+        client.init().url('http://www.cnn.com/', done);
     });
 
     describe('page', function () {
