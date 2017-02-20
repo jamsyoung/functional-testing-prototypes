@@ -15,7 +15,7 @@ Project              | Code Repository                            | Homepage
 Selenium             | <https://code.google.com/p/selenium/>      | <http://docs.seleniumhq.org/>
 PhantomJS            | <https://github.com/ariya/phantomjs/>      | <http://phantomjs.org/>
 CasperJS             | <https://github.com/n1k0/casperjs>         | <http://casperjs.org/>
-Mocha                | <https://github.com/visionmedia/mocha>     | <http://visionmedia.github.io/mocha/>
+Mocha                | <https://github.com/mochajs/mocha/>        | <http://mochajs.org/>
 Chai                 | <https://github.com/chaijs/chai>           | <http://chaijs.com/>
 Arrow                | <https://github.com/yahoo/arrow>           |
 Nightwatch.js        | <https://github.com/beatfactor/nightwatch> | <http://nightwatchjs.org/>
